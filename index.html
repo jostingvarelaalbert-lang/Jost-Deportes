@@ -1,140 +1,168 @@
-<section id="noticias">
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+}
 
-  <h1>🏆 Jost Deportes - Centro Internacional de Fútbol</h1>
+header {
+  background: #e10600;
+  padding: 18px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e10600;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🔥 ESTILO ESPN CARD */
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.tag {
+  background: #e10600;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+h2 {
+  border-left: 5px solid #e10600;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 12px;
+}
+<header>
+  🏆 JOST SPORTS
+</header>
+
+<nav>
+  <a href="#futbol">Fútbol</a>
+  <a href="#champions">Champions</a>
+  <a href="#ligas">Ligas</a>
+  <a href="#mundial">Mundial</a>
+</nav>
+
+<div class="container">
+
+  <!-- NOTICIA PRINCIPAL -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2">
+    <div class="card-content">
+      <span class="tag">DESTACADO</span>
+      <h2>🔥 Real Madrid domina el clásico español</h2>
+      <p>
+        El Real Madrid venció al FC Barcelona en un partido intenso con goles decisivos en la segunda mitad.
+        El encuentro estuvo marcado por presión alta, posesión equilibrada y decisiones arbitrales polémicas.
+      </p>
+    </div>
+  </div>
+
+  <!-- FUTBOL -->
+  <h2 id="futbol">⚽ Fútbol Internacional</h2>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20">
+    <div class="card-content">
+      <span class="tag">LIGAPRO</span>
+      <h3>Ecuador: LigaPro en crecimiento</h3>
+      <p>
+        Barcelona SC, LDU Quito e Independiente del Valle dominan la competencia nacional con alto nivel táctico.
+      </p>
+    </div>
+  </div>
 
   <!-- CHAMPIONS -->
-  <h2>🌍 UEFA Champions League</h2>
+  <h2 id="champions">🌍 Champions League</h2>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20"
-    style="width:100%; max-height:180px; object-fit:cover; border-radius:8px;">
-
-    <h3>⚔️ Semifinales de Champions League</h3>
-
-    <p>
-      La UEFA Champions League es la competición de clubes más prestigiosa del mundo. 
-      En la fase semifinal, los partidos se han caracterizado por alta intensidad táctica, presión alta y control del mediocampo.
-    </p>
-
-    <p>
-      🔹 <b>MVP destacado:</b> Mediocampista ofensivo con 2 goles y 1 asistencia  
-      <br>
-      🔹 <b>Tarjetas rojas:</b> 1 expulsión por doble amarilla en partido decisivo  
-      <br>
-      🔹 <b>Polémica:</b> penal no sancionado en el minuto 87
-    </p>
+    <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e">
+    <div class="card-content">
+      <span class="tag">UEFA</span>
+      <h3>Semifinales de alta intensidad</h3>
+      <p>
+        Partidos cerrados, VAR protagonista y rendimiento alto de los clubes europeos más fuertes.
+      </p>
+    </div>
   </div>
 
-  <!-- LA LIGA -->
-  <h2>🇪🇸 La Liga Española</h2>
+  <!-- LIGAS -->
+  <h2 id="ligas">🏅 Ligas Europeas</h2>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2"
-    style="width:100%; max-height:180px; object-fit:cover; border-radius:8px;">
-
-    <h3>🔥 Jornada de alto nivel en España</h3>
-
-    <p>
-      La Liga continúa siendo una de las competiciones más técnicas de Europa, con equipos como Real Madrid, FC Barcelona y Atlético de Madrid disputando los primeros puestos.
-    </p>
-
-    <p>
-      🔹 <b>Resultado destacado:</b> Real Madrid 2-1 Barcelona  
-      <br>
-      🔹 <b>MVP:</b> Delantero con gol decisivo al minuto 82  
-      <br>
-      🔹 <b>Polémica:</b> posible fuera de juego no revisado por VAR
-    </p>
-  </div>
-
-  <!-- PREMIER LEAGUE -->
-  <h2>🏴 Premier League</h2>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2"
-    style="width:100%; max-height:180px; object-fit:cover; border-radius:8px;">
-
-    <h3>⚡ Intensidad en Inglaterra</h3>
-
-    <p>
-      La Premier League se caracteriza por su ritmo alto, transiciones rápidas y competitividad extrema en cada jornada.
-    </p>
-
-    <p>
-      🔹 Partido clave: Manchester City vs Arsenal  
-      <br>
-      🔹 MVP: Portero con 7 atajadas decisivas  
-      <br>
-      🔹 Roja: defensa central expulsado por último hombre
-    </p>
-  </div>
-
-  <!-- LIGAPRO -->
-  <h2>🇪🇨 LigaPro Ecuador</h2>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20"
-    style="width:100%; max-height:180px; object-fit:cover; border-radius:8px;">
-
-    <h3>🔥 Fútbol ecuatoriano en crecimiento</h3>
-
-    <p>
-      La LigaPro ha evolucionado en nivel competitivo, con equipos como Barcelona SC, LDU Quito e Independiente del Valle destacando en torneos internacionales.
-    </p>
-
-    <p>
-      🔹 Partido destacado: Barcelona SC 1-1 Emelec  
-      <br>
-      🔹 MVP: mediocampista con control total del partido  
-      <br>
-      🔹 Polémica: gol anulado en los últimos minutos
-    </p>
+    <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a">
+    <div class="card-content">
+      <span class="tag">TRANSFERENCIAS</span>
+      <h3>Mercado de fichajes activo</h3>
+      <p>
+        Movimientos importantes en La Liga, Premier League y Serie A con grandes inversiones.
+      </p>
+    </div>
   </div>
 
   <!-- MUNDIAL -->
-  <h2>🏆 Mundial 2026</h2>
+  <h2 id="mundial">🏆 Mundial 2026</h2>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d"
-    style="width:100%; max-height:180px; object-fit:cover; border-radius:8px;">
-
-    <h3>🌍 Selecciones y rendimiento global</h3>
-
-    <p>
-      El Mundial reúne a las mejores selecciones del planeta, donde la táctica, el talento individual y la resistencia física definen cada partido.
-    </p>
-
-    <p>
-      🔹 Partido clave: Argentina vs Francia (alto nivel competitivo)  
-      <br>
-      🔹 MVP: delantero con doblete decisivo  
-      <br>
-      🔹 Roja: 1 expulsión en partido de eliminación directa  
-      <br>
-      🔹 Polémica: penal revisado por VAR en fase final
-    </p>
+    <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+    <div class="card-content">
+      <span class="tag">FIFA</span>
+      <h3>Selecciones en fase clave</h3>
+      <p>
+        El Mundial avanza con partidos decisivos, eliminaciones y alto nivel competitivo.
+      </p>
+    </div>
   </div>
 
-  <!-- FICHAJES -->
-  <h2>💰 Mercado de Fichajes</h2>
+</div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a"
-    style="width:100%; max-height:180px; object-fit:cover; border-radius:8px;">
-
-    <h3>📊 Transferencias y rumores</h3>
-
-    <p>
-      El mercado de fichajes es clave en el fútbol moderno, donde los clubes refuerzan sus plantillas para competir en ligas nacionales e internacionales.
-    </p>
-
-    <p>
-      🔹 Fichaje bomba: estrella mundial rumbo a club europeo  
-      <br>
-      🔹 Rumor fuerte: delantero sudamericano a La Liga  
-      <br>
-      🔹 Movimiento clave: renovación de figura principal del club
-    </p>
-  </div>
-
-</section>
+<footer>
+  © 2026 Jost Sports - Estilo ESPN
+</footer>
