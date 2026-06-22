@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jost Deportes</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: white;
+    }
+
+    header {
+      background: #e10600;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav {
+      background: #111827;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e10600;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1f2937;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border-left: 5px solid #e10600;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #e10600;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e10600;
+      padding: 3px 8px;
+      font-size: 12px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 20px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  🏆 JOST DEPORTES
+</header>
+
+<nav>
+  <a href="#noticias">Noticias</a>
+  <a href="#mundial">Mundial 2026</a>
+  <a href="#resultados">Resultados</a>
+</nav>
+
+<div class="container">
+
+  <section id="noticias">
+    <h2>🔥 Últimas Noticias</h2>
+
+    <div class="card">
+      <span class="tag">MUNDIAL</span>
+      <h3>Argentina gana su primer partido</h3>
+      <p>La selección argentina inició con victoria 3-0 en el Mundial 2026.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">ECUADOR</span>
+      <h3>Ecuador sorprende en defensa</h3>
+      <p>Gran rendimiento defensivo en su último encuentro internacional.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag">EUROPA</span>
+      <h3>Francia se perfila como favorita</h3>
+      <p>La selección francesa muestra un nivel dominante.</p>
+    </div>
+  </section>
+
+  <section id="mundial">
+    <h2>🏆 Mundial 2026</h2>
+
+    <div class="card">
+      <h3>Resultados recientes</h3>
+      <p>México 2-0 Sudáfrica</p>
+      <p>Brasil 1-1 Marruecos</p>
+      <p>España 4-0 Arabia Saudita</p>
+    </div>
+  </section>
+
+  <section id="resultados">
+    <h2>⚽ Próximos partidos</h2>
+
+    <div class="card">
+      <p>Argentina vs Austria</p>
+      <p>Francia vs Irak</p>
+      <p>Inglaterra vs Ghana</p>
+      <p>Portugal vs Uzbekistán</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Jost Deportes - Portal de noticias deportivas
+</footer>
+
+</body>
+</html>
